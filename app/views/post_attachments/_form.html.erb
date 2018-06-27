@@ -1,3 +1,4 @@
+<%= image_tag @post_attachment.avatar %>
 <%= form_with(model: post_attachment, local: true) do |form| %>
   <% if post_attachment.errors.any? %>
     <div id="error_explanation">
@@ -12,13 +13,8 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :post_id %>
-    <%= form.number_field :post_id %>
-  </div>
-
-  <div class="field">
-    <%= form.label :avatar %>
-    <%= form.text_field :avatar %>
+    <%= form.label :avatar %><br>
+    <%= form.file_field :avatar %>
   </div>
 
   <div class="actions">
