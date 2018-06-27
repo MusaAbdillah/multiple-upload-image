@@ -2,5 +2,5 @@ class PostAttachment < ApplicationRecord
 	# association 
 	belongs_to :post
 	# uploader 
-	mount_uploder :avatar, AvatarUploader 
+	mount_uploader :avatar, AvatarUploader 
 end

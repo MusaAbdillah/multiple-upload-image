@@ -19,7 +19,7 @@
   <%= form.fields_for :post_attributes do |p|%>
     <div class="field">
       <%= p.label :avatar %><br>
-      <%= p.file_field :avatar, :multipart => true, name: "post_attachment[avatar][]"%>
+      <%= p.file_field :avatar, :multipart => true, name: "post_attachments[avatar][]" %>
     </div>
   <% end %>
 
