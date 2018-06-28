@@ -1,4 +1,4 @@
-<%= image_tag @post_attachment.avatar %>
+<%= image_tag @post_attachment.avatar.to_s %>
 <%= form_with(model: post_attachment, local: true) do |form| %>
   <% if post_attachment.errors.any? %>
     <div id="error_explanation">
